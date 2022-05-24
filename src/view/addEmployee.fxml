@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Validator">
+   <children>
+      <AnchorPane prefHeight="197.0" prefWidth="455.0" style="-fx-background-color: #000;">
+         <children>
+            <Label layoutX="82.0" layoutY="154.0" prefHeight="28.0" prefWidth="109.0" style="-fx-font-weight: 700;" text="Address:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="121.0" prefHeight="28.0" prefWidth="109.0" style="-fx-font-weight: 700;" text="Phone:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="89.0" prefHeight="28.0" prefWidth="109.0" style="-fx-font-weight: 700;" text="Email:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="57.0" prefHeight="28.0" prefWidth="115.0" style="-fx-font-weight: 700;" text="Name:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="7.0" prefHeight="33.0" prefWidth="290.0" style="-fx-font-weight: 700;" text="           Personal Details" textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTxt" layoutX="195.0" layoutY="59.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="emailTxt" layoutX="195.0" layoutY="91.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="phoneTxt" layoutX="195.0" layoutY="123.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="addressTxt" layoutX="195.0" layoutY="156.0" prefHeight="23.0" prefWidth="168.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="199.0" prefHeight="260.0" prefWidth="455.0" style="-fx-background-color: #000;">
+         <children>
+            <Label layoutX="58.0" layoutY="150.0" prefHeight="28.0" prefWidth="125.0" style="-fx-font-weight: 700;" text="Job Type:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="117.0" prefHeight="28.0" prefWidth="125.0" style="-fx-font-weight: 700;" text="Hourly Rate:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="85.0" prefHeight="28.0" prefWidth="125.0" style="-fx-font-weight: 700;" text="Paid Hours:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="53.0" prefHeight="28.0" prefWidth="125.0" style="-fx-font-weight: 700;" text="TFN:" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="7.0" prefHeight="33.0" prefWidth="290.0" style="-fx-font-weight: 700;" text="           Employment Details" textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TFNTxt" layoutX="194.0" layoutY="55.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="paid_hoursTxt" layoutX="194.0" layoutY="87.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="hourly_rateTxt" layoutX="194.0" layoutY="119.0" prefHeight="23.0" prefWidth="168.0" />
+            <TextField fx:id="job_typeTxt" layoutX="194.0" layoutY="152.0" prefHeight="23.0" prefWidth="168.0" />
+            <Button fx:id="addBtn" layoutX="78.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: #dddddd; -fx-border-width: 2;" text="Add" textFill="#dddddd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateBtn1" layoutX="165.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="28.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: #dddddd; -fx-border-width: 2;" text="Update" textFill="#dddddd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="closeBtn2" layoutX="252.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: #dddddd; -fx-border-width: 2;" text="Close" textFill="#dddddd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="384.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="40.0" layoutY="78.0" style="-fx-font-weight: 700;" text="Email:" textFill="#ccc8c8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="14.0" prefHeight="36.0" prefWidth="85.0" style="-fx-font-weight: 700;" text="Login" textFill="#ccc8c8">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="125.0" style="-fx-font-weight: 700;" text="Password:" textFill="#ccc8c8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTxt" layoutX="158.0" layoutY="76.0" prefHeight="27.0" prefWidth="191.0" />
+      <Label fx:id="incorrect" layoutX="143.0" layoutY="171.0" style="-fx-font-weight: 700;" text="Incorrect login details" textFill="#da0404">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="okBtn" layoutX="167.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleOK" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #000; -fx-border-color: #ccc8c8; -fx-border-width: 2; -fx-border-radius: 1;" text="OK" textFill="#ccc8c8">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="256.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #000; -fx-border-width: 2; -fx-border-color: #ccc8c8; -fx-border-radius: 1;" text="Cancel" textFill="#ccc8c8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordTxt" layoutX="158.0" layoutY="127.0" prefHeight="27.0" prefWidth="191.0" />
+   </children>
+</AnchorPane>
