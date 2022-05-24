@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="366.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ErrorController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="106.0" prefWidth="366.0" style="-fx-background-color: #000;">
+         <children>
+            <Label style="-fx-font-weight: 700;" text="From Vaildation Errors" textFill="#dddddd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+      <VBox fx:id="ErrorBox" alignment="CENTER" prefHeight="109.0" prefWidth="366.0" style="-fx-background-color: #000;">
+         <children>
+            <Text fx:id="nameError" fill="#eeee45" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Incorrect name pattern!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="emailError" fill="#eeee45" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Incorrect email pattern!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="phoneError" fill="#eeee45" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Incorrect phone pattern!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="TFNError" fill="#eeee45" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Incorrect TFN pattern!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="82.0" prefWidth="366.0" style="-fx-background-color: #000;">
+         <children>
+            <Button fx:id="OkayBtn" mnemonicParsing="false" onAction="#handleOkay" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: rgb(29,29,29); -fx-border-color: #dddddd; -fx-border-width: 2;" text="Okay" textFill="#dddddd">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="748.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StpController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="39.0" prefWidth="146.0" style="-fx-font-weight: 700;" text="STP Report" textFill="#dddddd">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reportTable" layoutY="65.0" prefHeight="210.0" prefWidth="755.0" style="-fx-background-color: #000;">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="150.0" text="Employee Name " />
+          <TableColumn fx:id="wageCol" prefWidth="150.0" text="Wages" />
+            <TableColumn fx:id="taxCol" prefWidth="150.0" text="TAX" />
+            <TableColumn fx:id="netCol" prefWidth="150.0" text="Net" />
+            <TableColumn fx:id="superCol" prefWidth="150.0" text="Super" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="286.0" style="-fx-font-weight: 700;" text="Quarterly Bas:" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="319.0" style="-fx-font-weight: 700;" text="Total Wages:" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="348.0" style="-fx-font-weight: 700;" text="Total TAX:" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="378.0" style="-fx-font-weight: 700;" text="Total Net:" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="410.0" style="-fx-font-weight: 700;" text="Total Super:" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="bas" fill="#dddddd" layoutX="165.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="Twages" fill="#dddddd" layoutX="165.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="Ttax" fill="#dddddd" layoutX="165.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="Tnet" fill="#dddddd" layoutX="165.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="Tsuper" fill="#dddddd" layoutX="165.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeBtn" layoutX="633.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: #dddddd; -fx-border-width: 2;" text="Close" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

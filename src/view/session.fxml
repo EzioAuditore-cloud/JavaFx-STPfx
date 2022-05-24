@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.SessionController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="520.0" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <HBox prefHeight="147.0" prefWidth="520.0">
+         <children>
+            <VBox prefHeight="145.0" prefWidth="285.0" style="-fx-background-color: rgb(10,10,10);">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900;" text="STPFX" wrappingWidth="134.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="16.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fill="#d3d1d1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 900;" text="Payroll Management System">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="12.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="145.0" prefWidth="236.0" style="-fx-background-color: rgb(10,10,10);">
+               <children>
+                  <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#handleLogin" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: rgb(10,10,10); -fx-background-radius: 0; -fx-border-color: #d3d1d1; -fx-border-width: 2;" text="Login" textFill="#eeebeb">
+                     <HBox.margin>
+                        <Insets right="7.0" top="7.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#handleExit" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: rgb(10,10,10); -fx-background-radius: 0; -fx-border-color: #d3d1d1; -fx-border-width: 2;" text="Exit" textFill="#eeeded">
+                     <HBox.margin>
+                        <Insets right="10.0" top="7.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="306.0" prefWidth="520.0" style="-fx-background-image: url(view/stp.jpg); -fx-background-position: center;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="2.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

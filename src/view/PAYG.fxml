@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="611.0" style="-fx-background-color: #000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.PaygController">
+   <children>
+      <Label layoutX="20.0" layoutY="29.0" style="-fx-font-weight: 700;" text="PAYG Annual Report:" textFill="#dddddd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="82.0" style="-fx-font-weight: 700;" text="Weekly Paid Hours:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="124.0" style="-fx-font-weight: 700;" text="Gross Income:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="162.0" style="-fx-font-weight: 700;" text="Net Income:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="201.0" style="-fx-font-weight: 700;" text="Superannuation:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="82.0" style="-fx-font-weight: 700;" text="Hourly Pay Rate:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="124.0" style="-fx-font-weight: 700;" text="TAX Rate:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="162.0" style="-fx-font-weight: 700;" text="Deduction:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="201.0" style="-fx-font-weight: 700;" text="Super Rate:" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="PaidhoursTxt" fill="#b0bc31" layoutX="185.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="GincomeTxt" fill="#b0bc31" layoutX="185.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NincomeTxt" fill="#b0bc31" layoutX="185.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="SuperannuationTxt" fill="#b0bc31" layoutX="185.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="payrateTxt" fill="#b0bc31" layoutX="482.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="TaxrateTxt" fill="#b0bc31" layoutX="482.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="DeductionTxt" fill="#b0bc31" layoutX="482.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="SuperrateTxt" fill="#b0bc31" layoutX="482.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeBtn" layoutX="264.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: rgb(22,22,22); -fx-border-color: #dddddd; -fx-border-width: 2;" text="Close" textFill="#dddddd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
